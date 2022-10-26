@@ -14,7 +14,7 @@
     <div class="header">
         <nav class="navbar navbar-expand-lg pt-4 pb-4  ">
             <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
@@ -27,8 +27,9 @@
                     <a class="nav-link" href="#">PROGRAMAÇÃO</a>
                   </li>
                 </ul>
-                <form class="d-flex">
-                  <button class="btn btn-danger"  type="submit"> ASSINE AGORA</button>
+                <form id="btn-head" class="d-flex">
+                  <button class="btn btn-danger"><a href="#assine" class="card-link">Assine Agora </a></button>
+                  <!--button class="btn btn-danger"  type="submit"><a href="#assine"></a> ASSINE AGORA</button> -->
                 </form>
               </div>
             </div>
@@ -169,33 +170,33 @@
 </section>
 <!-- Para curtir -->
 <div id="curtir">
-  <h2 class="text-center pt-5">Pra curtir em streaming, na TV ou no cinema</h2>
+  <h2  class="text-center pt-5">Pra curtir em streaming, na TV ou no cinema</h2>
   <div class="container">
     <div class="row">
       <div class="col">
         <div class="card" style="width: 18rem;">
           <div class="card-body">
-            <h6 class="card-title">Seu momento</h6>
-            <h5 class="card-subtitle mb-2 text-muted">Cinema</h5>
-            <p class="card-text">Dos herois aos premiados, o melhor centeúdo de cinema é aqui.</p>
+            <h6  class="card-title sub">Seu momento</h6>
+            <h5 class="card-subtitle text-center mb-2 principal">Cinema</h5>
+            <p class="card-text parag">Dos herois aos premiados, o melhor centeúdo de cinema é aqui.</p>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card" style="width: 18rem;">
           <div class="card-body">
-            <h6 class="card-title">Assista como</h6>
-            <h5 class="card-subtitle mb-2 text-muted">quiser</h5>
-            <p class="card-text">Filmes on demand ou na programação 24h dos 6 canais.</p>
+            <h6 class="card-title sub">Assista como</h6>
+            <h5 class="card-subtitle mb-2 principal ">quiser</h5>
+            <p class="card-text parag">Filmes on demand ou na programação 24h dos 6 canais.</p>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card" style="width: 18rem;">
           <div class="card-body">
-            <h6 class="card-title">estreias</h6>
-            <h5 class="card-subtitle mb-2 text-muted">inéditas</h5>
-            <p class="card-text">Filmes exclusivos no Brasil na nossa sessão Première Telecine.</p>
+            <h6 class="card-title sub">estreias</h6>
+            <h5 class="card-subtitle mb-2 principal">inéditas</h5>
+            <p class="card-text parag">Filmes exclusivos no Brasil na nossa sessão Première Telecine.</p>
           </div>
         </div>
       </div>
@@ -203,9 +204,13 @@
   </div>
 </div>
 <!--ACORDION-->
-<div>
-  <h2>Tire suas dúvidas aqui</h2>
+<div id="accordion">
+  <h2 class="text-center pt-5">Tire suas dúvidas aqui</h2>
+
+
   <div class="accordion accordion-flush" id="accordionFlushExample">
+
+
     <div class="accordion-item">
       <h2 class="accordion-header" id="flush-headingOne">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -216,6 +221,7 @@
         <div class="accordion-body">Líder e referência em filmes, o Telecine te oferece a mais completa experiência de cinema do Brasil. São mais de 2.000 filmes, disponíveis na programação ininterrupta dos nossos 6 canais e em streaming, selecionados pelo nosso time de apaixonados por cinema, pra você encontrar o que quer assistir rapidinho. Com muito conteúdo de bastidores, curiosidades e dicas, aqui no Telecine, o filme é só o começo. Você curte os clássicos que adora rever, sucessos dos grandes estúdios, o melhor do mercado independente e do cinema nacional, além de produções inéditas no Brasil, lançadas pelo selo Première Telecine. Escolha a sua tela preferida e aproveite seu momento cinema.</div>
       </div>
     </div>
+
 
     <div class="accordion-item">
       <h2 class="accordion-header" id="flush-headingTwo">
@@ -249,12 +255,12 @@
     </div>
 
     <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+      <h2 class="accordion-header" id="flush-headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
           Sou assinante via operadora, como posso acessar o streaming do Telecine?
         </button>
       </h2>
-      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
         <div class="accordion-body">O streaming do Telecine funciona agora dentro do Globoplay.
           Se você assina o Telecine por alguma operadora parceira, é importante confirmar por onde você passa a acessar nosso conteúdo a partir de agora.
           Entenda mais detalhes.</div>
@@ -262,17 +268,22 @@
     </div>
 
     <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+      <h2 class="accordion-header" id="flush-headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
           Como eu cancelo o Telecine?
         </button>
       </h2>
-      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
         <div class="accordion-body">Se você contratou o Telecine por uma operadora parceira, é necessário que você entre em contato com ela para questões referentes ao cancelamento de seu pacote.
 
           Se você contratou o Telecine diretamente via streaming do Telecine ou Globoplay, o cancelamento pode ser solicitado a qualquer momento diretamente pela sua Conta Globo. Pronto!</div>
       </div>
     </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="container">
+    <h6>Desenvolvido por Ana Clara Mota - Conheça mais projetos <a href="https://github.com/devanaclaramota" target="_blank" rel="noopener noreferrer">AQUI.</a></h6>
   </div>
 </div>
 
