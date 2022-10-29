@@ -148,3 +148,48 @@
     color: white;
 }
 
+
+
+@media (max-width:767px){
+  
+
+    .navbar-toggler{
+        background-color: #ffffff;
+    
+       
+    }
+    .carousel-inner{
+        width: 500px;
+        height: 350px;
+    }
+    #video{
+     
+      margin:auto
+   
+      
+       }
+       #sucesso{
+        padding-top: 120px;
+       }
+       #assine p {
+        margin: 10px;
+       }
+
+
+       .canais a {
+        padding: 20px;
+        
+       }
+       #curtir{
+        padding-top: 700px;
+       }
+       #curtir .card{
+   
+        margin-top: 16px;
+        margin-left:78px ;
+    
+      
+        
+       }
+       
+}
