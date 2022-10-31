@@ -187,9 +187,12 @@
    
         margin-top: 16px;
         margin-left:78px ;
-    
-      
-        
        }
-       
+        #plano{
+            margin-left: 70px;
+        }
+        #curtir .container{
+            margin-left: 50px ;
+        }
+
 }
