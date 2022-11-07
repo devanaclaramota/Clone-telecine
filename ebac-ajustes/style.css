@@ -24,19 +24,21 @@
     color: white;
 }
 .carousel-inner{
-    margin: auto;
-    width: 1200px;
     height: 500px;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
 }
 .container iframe{
     margin-top: 30px;
-    margin-left: 60px;
 }
 .p-sobre{
     width: 430px;
     height: 288px;
     color: white;
-    margin-left: 30px;
+    margin-top: 30px;
 }
 .container h2{
     color: white;
@@ -45,7 +47,7 @@
     color: white;
 }
 #sucesso{
-    width: 1200px;
+    width: 100%;
 }
 .card{
     margin-top: 32px;
@@ -63,12 +65,9 @@
 #p-assine{
     color: white;
 }
-#assine-icon{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
 .assine img{
+    margin-top: 120px;
+    margin-left: 40px;
     width: 100px;
 }
 #globoplay {
@@ -77,8 +76,8 @@
 }
 #globoplay .container{
     background-color: #191919;
-    width: 1200px;
-    height: 500px;
+    width: auto;
+    height: auto;
     border-radius: 10px;
     padding: 40px;
    
@@ -151,13 +150,30 @@
     color: white;
 }
 
+#video{
+    width: 100%;
+}
+
+@media (max-width:572px){
+    
+
+    #globoplay .container img{
+        width: 270px;
+    }
+
+    #plano {
+        margin-left: 0px !important;
+    }
+
+    #curtir .card {
+        margin-top: 16px;
+        margin-left: 0px !important;
+    }
+}
+
 
 @media (max-width:767px){
-
-    .carousel-inner{
-        width: 550px;
-        margin: auto;
-    }
+  
 
     .navbar-toggler{
         background-color: #ffffff;
@@ -170,79 +186,32 @@
       margin:auto
    
       
-    }
-    #sucesso{
+       }
+       #sucesso{
         padding-top: 120px;
        }
-    #assine p {
+       #assine p {
         margin: 10px;
        }
-   
-    .operadora{
-       
-        width: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .canais a {
+
+
+       .canais a {
         padding: 20px;
         
-    }
-    #curtir{
+       }
+       #curtir{
         padding-top: 700px;
-    }
-    #curtir .card{
+       }
+       #curtir .card{
    
         margin-top: 16px;
         margin-left:78px ;
-    }
-    #plano{
-       
-        
-        margin-top: 400px;
-        margin-left: -130px;
-        
-        
-    }
-    #curtir .container{
-        margin-left: 50px ;
-    }
+       }
+        #plano{
+            margin-left: 70px;
+        }
+        #curtir .container{
+            margin-left: 50px ;
+        }
 
 }
-
-
-@media (max-width:572px){
-       
-        .carousel-inner{
-            width: 500px;
-        }
-        #sucesso{
-
-            width: 500px;
-        }
-
-
-        #globoplay .container{
-
-
-            width: 90%;
-        }
-        #globoplay .container img{
-            width: 270px;
-        }
-    
-        #plano {
-          margin-left: 0px !important; 
-          margin-top: 0px;
-
-        }
-    
-        #curtir .card {
-            
-            margin-left: 0px !important;
-        }
-    }
-
-  
-
